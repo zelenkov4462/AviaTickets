@@ -81,7 +81,7 @@ export const InputForm: FC = () => {
         >
           <Row className={styles.wrap}>
             <div className={styles.itemLabel}>Откуда</div>
-            <Form.Item name="from">
+            <Form.Item name="from" rules={[rules.required()]}>
               <Input
                 ref={inputRef}
                 className={styles.item}
@@ -96,7 +96,7 @@ export const InputForm: FC = () => {
 
           <Row className={styles.wrap}>
             <div className={styles.itemLabel}>Куда</div>
-            <Form.Item name="to" rules={[rules.textValidate()]}>
+            <Form.Item name="to" rules={[rules.required()]}>
               <Input
                 className={styles.item}
                 value={ticket.cityTo}
