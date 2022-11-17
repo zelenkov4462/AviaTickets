@@ -1,0 +1,158 @@
+@import './src/assets/styles/variables';
+@import './src/assets/styles/mixins';
+
+
+
+
+
+.label {
+  margin-top: -20px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemLabel{
+  color: $color-white;
+  position: relative;
+  top: 3px;
+  font-size: 11px;
+}
+
+.item {
+  margin-right: 25px;
+  border-radius: $border-radius-s;
+  width: 208px;
+}
+
+.last {
+  margin-right: 0;
+}
+
+
+.formTop {
+  padding: 30px;
+  background-color: $color-primary;
+  border-radius: $border-radius-s $border-radius-s 0 0 ;
+  height: 100px;
+}
+
+.formBottom {
+  background-color: $color-white;
+  border-radius: 0 0 $border-radius-s $border-radius-s;
+  justify-content: flex-end;
+  height: 86px;
+  display: flex;
+}
+
+.button {
+  padding-right: 29px;
+  align-items: flex-end;
+}
+
+.btn {
+  border-radius: $border-radius-s;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: $letter-spacing;
+  cursor: pointer;
+  background-color: $color-primary;
+}
+
+
+
+.form {
+  display: grid;
+  grid-template-columns: 300px;
+
+  @include min-phone {
+    grid-template-columns: 400px;
+  }
+  @include tablet {
+    grid-template-columns: 600px;
+  }
+  @include tablet-big {
+    grid-template-columns: 750px;
+  }
+  @include desktop-min {
+    grid-template-columns: 950px;
+  }
+  @include desktop-sm {
+    display: block;
+  }
+}
+
+.formTop {
+  height: 320px;
+  align-items: center;
+  @include tablet {
+    height: 150px;
+  }
+  @include desktop-min {
+    height: 160px;
+  }
+  @include desktop-sm {
+    height: 100px;
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //position: relative;
+  //left: 65px;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 50px;
+  }
+  @include tablet-big {
+    gap: 0 90px;
+  }
+  @include desktop-min {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px 20px;
+
+  }
+  @include desktop-sm {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.item {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

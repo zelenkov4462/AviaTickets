@@ -1,0 +1,155 @@
+@import './src/assets/styles/variables';
+@import './src/assets/styles/mixins';
+
+.mainContent {
+  display: flex;
+}
+
+.timeTop{
+  display: grid;
+  grid-template-columns: 80px minmax(200px, 1fr) 125px;
+  gap: 10px;
+  position: relative;
+  top: 20px;
+  @include mobile {
+    top: -10px;
+
+  }
+  @include tablet {
+    grid-template-columns: 80px minmax(200px, 1fr) 125px;
+    gap: 25px;
+    top: -15px;
+
+  }
+  @include tablet-big {
+    grid-template-columns: 80px minmax(350px, 1fr) 125px;
+    position: static;
+  }
+
+
+  & img {
+    position: relative;
+    top: -10px;
+  }
+}
+
+.fly {
+  @include mobile {
+    width: 200px;
+  }
+  @include tablet-mid {
+    width: 200px;
+  }
+  @include tablet {
+    width: 100%;
+  }
+}
+
+
+
+.time {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 28px;
+  color: $color-root;
+}
+
+
+.date {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 16px;
+  color: $color-gray;
+  margin-top: 5px;
+  padding-bottom: 15px;
+
+  & > span {
+    display: block;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 16px;
+    color: $color-gray;
+  }
+}
+
+
+
+.timeBottom {
+  display: flex;
+  gap: 10px;
+  @include min-phone {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+  @include mobile {
+    flex-direction: row;
+  }
+  @include tablet-mid {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+  }
+  @include tablet-big {
+    flex-direction: row;
+  }
+}
+
+.timeFrom {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.timeItem{
+  background-color: $color-tab;
+  border-radius: $border-radius-s;
+  padding: 7px 12px;
+}
+
+
+.bags {
+  @include mobile {
+    position: relative;
+    top: -20px;
+    right: -25px;
+
+  }
+  @include tablet {
+    top: -30px;
+    right: -30px;
+  }
+  @include tablet-big {
+    position: relative;
+    top: 45px;
+    right: 200px;
+  }
+  @include desktop-min {
+    position: relative;
+    top: -35px;
+    right: 50px;
+  }
+  @include desktop-sm {
+    position: relative;
+    right: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

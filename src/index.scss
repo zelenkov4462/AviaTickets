@@ -1,0 +1,27 @@
+@import './src/assets/styles/_variables.scss';
+
+html,
+body,
+div[id="root"] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  background-color: $color-lightgray;
+}
+
+body[body-overflow] {
+  overflow: hidden;
+}
+
+input,
+textarea {
+&:hover,
+&:active,
+&:focus {
+   outline: none;
+   text-decoration: none;
+ }
+}

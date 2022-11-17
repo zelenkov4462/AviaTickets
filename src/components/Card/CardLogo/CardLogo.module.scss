@@ -1,0 +1,50 @@
+@import './src/assets/styles/variables';
+@import './src/assets/styles/mixins';
+
+.statusCard {
+  background-color: $color-lightblue;
+  border-radius: $border-radius-m 0 $border-radius-m 0;
+  padding: 7px;
+  position: relative;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: $color-white;
+  @include mobile {
+    padding: 7px;
+    font-size: 1.2rem;
+    top: -29px;
+    left: -21px;
+  }
+  @include tablet {
+    padding: 19px 7px;
+    font-size: 1.6rem;
+    top: -81px;
+    left: -20px;
+  }
+  @include tablet-big {
+    top: -42px;
+    left: -20px;
+    padding: 7px;
+    font-size: 1.2rem;
+  }
+
+}
+
+.logoWrap {
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  left: -20px;
+}
+
+.logoDes {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 21px;
+  color: $color-gray;
+  margin-top: 10px;
+}

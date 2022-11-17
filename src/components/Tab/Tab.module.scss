@@ -1,0 +1,29 @@
+@import './src/assets/styles/variables';
+
+.tab {
+  border-radius: $border-radius-s;
+  padding: 7px 12px;
+  border: 1px solid $color-tab;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 2px 2px 2px $color-lightgray;
+
+  &:hover {
+    background-color: $color-tab;
+    box-shadow: none;
+  }
+}
+
+.tabActive {
+  background-color: $color-lightgray;
+  box-shadow: none;
+}
+
+.timeTo {
+  font-size: 1.3rem;
+}
+
+.tabActive {
+  background-color: $color-tab;
+}
