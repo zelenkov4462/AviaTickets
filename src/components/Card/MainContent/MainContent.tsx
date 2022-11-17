@@ -39,7 +39,7 @@ export const MainContent: FC<MainContentProps> = ({
             </div>
           </div>
           <img
-            src="time.svg"
+            src="../time.svg"
             alt="fly"
             width={350}
             height={60}
@@ -73,7 +73,7 @@ export const MainContent: FC<MainContentProps> = ({
         </div>
       </div>
       <div className={styles.bags}>
-        <img src="bags.svg" alt="bags" />
+        <img src="../bags.svg" alt="bags" />
       </div>
     </div>
   );
